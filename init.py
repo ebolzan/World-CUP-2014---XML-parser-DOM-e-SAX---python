@@ -239,9 +239,6 @@ class Game(xml.sax.ContentHandler):
                 gG.setGroup(self.groupG)
                 listGG = self.stage_group_games[36:42]
 
-                gG.showGroup()
-                input()
-
 
                 self.finals.setG(gG.createGames(listGG))
 
