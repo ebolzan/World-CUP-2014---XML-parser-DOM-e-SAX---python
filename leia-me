@@ -1,0 +1,22 @@
+#################### Trabalho de programação para internet b ####################
+
+Evandro Bolzan
+Sistema de Informação UFSM - 8º semestre
+contato - ebolzan@inf.ufsm.br
+
+
+1. Considerações:
+-Foi usado a linguagem de programação python;
+-O resultado é impresso em terminal;
+-Não requer nenhuma dependência especial. Apenas deve ter instalado o compilador python.
+
+
+2. Execução do software:
+-Entrar no diretório em modo terminal;
+-Em ambiente linux: python init.py;
+-O resultado será impresso no terminal;
+
+
+
+
+

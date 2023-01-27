@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/copa_do_mundo.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE copa_do_mundo SYSTEM "copa_do_mundo.dtd">
+
+    <copa_do_mundo>
+    ...
+    </copa_do_mundo>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT copa_do_mundo (fase_final|fase_de_grupos|potes)*>
+<!ATTLIST copa_do_mundo
+    xmlns:xsi CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT potes (pote)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT pote (selecao)*>
+<!ATTLIST pote
+    numero CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT selecao (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT fase_de_grupos (grupo)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT grupo (jogos)*>
+<!ATTLIST grupo
+    letra CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT jogos (jogo)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT jogo (local|estadio|horario|data)*>
+<!ATTLIST jogo
+    numero CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT data (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT horario (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT estadio (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT local (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT fase_final (final|decisao_terceiro_lugar|semifinais|quartas_de_final|oitavas_de_final)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT oitavas_de_final (jogos)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT quartas_de_final (jogos)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT semifinais (jogos)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT decisao_terceiro_lugar (jogo)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT final (jogo)*>

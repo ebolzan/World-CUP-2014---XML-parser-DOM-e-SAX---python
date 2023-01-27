@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE copa_do_mundo SYSTEM "copa_do_mundo.dtd">
+<copa_do_mundo>
+    
+	<potes>
+		<pote numero="1">
+			<selecao>Brasil</selecao>
+			<selecao>Espanha</selecao>
+			<selecao>Alemanha</selecao>
+			<selecao>Argentina</selecao>
+			<selecao>Colômbia</selecao>
+			<selecao>Bélgica</selecao>
+			<selecao>Uruguai</selecao>
+			<selecao>Suíça</selecao>
+		</pote>
+		<pote numero="2">
+			<selecao>Argélia</selecao>
+			<selecao>Camarões</selecao>
+			<selecao>Costa do Marfim</selecao>
+			<selecao>Gana</selecao>
+			<selecao>Nigéria</selecao>
+			<selecao>Chile</selecao>
+			<selecao>Equador</selecao>
+			<selecao>Itália</selecao>
+		</pote>
+		<pote numero="3">
+			<selecao>Austrália</selecao>
+			<selecao>Japão</selecao>
+			<selecao>Irã</selecao>
+			<selecao>Coreia do Sul</selecao>
+			<selecao>Cista Rica</selecao>
+			<selecao>Honduras</selecao>
+			<selecao>México</selecao>
+			<selecao>Estados Unidos</selecao>
+		</pote>
+		<pote numero="4">
+			<selecao>Bósnia e Herzegovina</selecao>
+			<selecao>Croácia</selecao>
+			<selecao>Inglaterra</selecao>
+			<selecao>França</selecao>
+			<selecao>Grécia</selecao>
+			<selecao>Países Baixos</selecao>
+			<selecao>Portugal</selecao>
+			<selecao>Rússia</selecao>
+		</pote>
+	</potes>
+	<fase_de_grupos>
+		<grupo letra="A">
+			<jogos>
+				<jogo numero="01">
+					<data>12 de junho de 2014</data>
+					<horario>17:00</horario>
+					<estadio>Arena de São Paulo</estadio>
+					<local>São Paulo</local>
+				</jogo>
+				<jogo numero="02">
+					<data>13 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Arena das Dunas</estadio>
+					<local>Natal</local>
+				</jogo>
+				<jogo numero="16">
+					<data>17 de junho de 2014</data>
+					<horario>16:00</horario>
+					<estadio>Arena Castelão</estadio>
+					<local>Fortaleza</local>
+				</jogo>
+				<jogo numero="20">
+					<data>18 de junho de 2014</data>
+					<horario>18:00</horario>
+					<estadio>Arena Amazônia</estadio>
+					<local>Manaus</local>
+				</jogo>
+				<jogo numero="35">
+					<data>23 de junho de 2014</data>
+					<horario>17:00</horario>
+					<estadio>Estádio Nacional de Brasília</estadio>
+					<local>Brasília</local>
+				</jogo>
+				<jogo numero="36">
+					<data>23 de junho de 2014</data>
+					<horario>17:00</horario>
+					<estadio>Arena Pernambuco</estadio>
+					<local>Recife</local>
+				</jogo>
+			</jogos>
+		</grupo>
+		<grupo letra="B">
+			<jogos>
+				<jogo numero="03">
+					<data>13 de junho de 2014</data>
+					<horario>16:00</horario>
+					<estadio>Arena Fonte Nova</estadio>
+					<local>Salvador</local>
+				</jogo>
+				<jogo numero="04">
+					<data>13 de junho de 2014</data>
+					<horario>18:00</horario>
+					<estadio>Arena Pantanal</estadio>
+					<local>Cuiabá</local>
+				</jogo>
+				<jogo numero="18">
+					<data>18 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Estádio Beira-Rio</estadio>
+					<local>Porto Alegre</local>
+				</jogo>
+				<jogo numero="19">
+					<data>18 de junho de 2014</data>
+					<horario>16:00</horario>
+					<estadio>Maracanã</estadio>
+					<local>Rio de Janeiro</local>
+				</jogo>
+				<jogo numero="33">
+					<data>23 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Arena da Baixada</estadio>
+					<local>Curitiba</local>
+				</jogo>
+				<jogo numero="34">
+					<data>23 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Arena de São Paulo</estadio>
+					<local>São Paulo</local>
+				</jogo>
+			</jogos>
+		</grupo>
+		<grupo letra="C">
+			<jogos>
+				<jogo numero="05">
+					<data>14 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Estádio Mineirão</estadio>
+					<local>Belo Horizonte</local>
+				</jogo>
+				<jogo numero="08">
+					<data>14 de junho de 2014</data>
+					<horario>22:00</horario>
+					<estadio>Arena Pernambuco</estadio>
+					<local>Recife</local>
+				</jogo>
+				<jogo numero="21">
+					<data>19 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Estádio Nacional de Brasília</estadio>
+					<local>Brasília</local>
+				</jogo>
+				<jogo numero="23">
+					<data>19 de junho de 2014</data>
+					<horario>19:00</horario>
+					<estadio>Arena das Dunas</estadio>
+					<local>Natal</local>
+				</jogo>
+				<jogo numero="39">
+					<data>24 de junho de 2014</data>
+					<horario>16:00</horario>
+					<estadio>Arena Pantanal</estadio>
+					<local>Cuiabá</local>
+				</jogo>
+				<jogo numero="40">
+					<data>24 de junho de 2014</data>
+					<horario>17:00</horario>
+					<estadio>Arena Castelão</estadio>
+					<local>Fortaleza</local>
+				</jogo>
+			</jogos>
+		</grupo>
+		<grupo letra="D">
+			<jogos>
+				<jogo numero="06">
+					<data>14 de junho de 2014</data>
+					<horario>16:00</horario>
+					<estadio>Arena Castelão</estadio>
+					<local>Fortaleza</local>
+				</jogo>
+				<jogo numero="07">
+					<data>14 de junho de 2014</data>
+					<horario>18:00</horario>
+					<estadio>Arena Amazônia</estadio>
+					<local>Manaus</local>
+				</jogo>
+				<jogo numero="22">
+					<data>19 de junho de 2014</data>
+					<horario>16:00</horario>
+					<estadio>Arena de São Paulo</estadio>
+					<local>São Paulo</local>
+				</jogo>
+				<jogo numero="24">
+					<data>20 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Arena Pernambuco</estadio>
+					<local>Recife</local>
+				</jogo>
+				<jogo numero="37">
+					<data>24 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Arena das Dunas</estadio>
+					<local>Natal</local>
+				</jogo>
+				<jogo numero="38">
+					<data>24 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Est�dio Mineir�o</estadio>
+					<local>Belo Horizonte</local>
+				</jogo>
+			</jogos>
+		</grupo>
+		<grupo letra="E">
+			<jogos>
+				<jogo numero="09">
+					<data>15 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Estádio Nacional de Brasília</estadio>
+					<local>Brasília</local>
+				</jogo>
+				<jogo numero="10">
+					<data>15 de junho de 2014</data>
+					<horario>16:00</horario>
+					<estadio>Estádio Beira-Rio</estadio>
+					<local>Porto Alegre</local>
+				</jogo>
+				<jogo numero="25">
+					<data>20 de junho de 2014</data>
+					<horario>16:00</horario>
+					<estadio>Arena Fonte Nova</estadio>
+					<local>Salvador</local>
+				</jogo>
+				<jogo numero="26">
+					<data>20 de junho de 2014</data>
+					<horario>19:00</horario>
+					<estadio>Arena da Baixada</estadio>
+					<local>Curitiba</local>
+				</jogo>
+				<jogo numero="43">
+					<data>25 de junho de 2014</data>
+					<horario>16:00</horario>
+					<estadio>Arena Amazônia</estadio>
+					<local>Manaus</local>
+				</jogo>
+				<jogo numero="44">
+					<data>25 de junho de 2014</data>
+					<horario>17:00</horario>
+					<estadio>Maracanã</estadio>
+					<local>Rio de Janeiro</local>
+				</jogo>
+			</jogos>
+		</grupo>
+		<grupo letra="F">
+			<jogos>
+				<jogo numero="11">
+					<data>15 de junho de 2014</data>
+					<horario>19:00</horario>
+					<estadio>Maracanã</estadio>
+					<local>Rio de Janeiro</local>
+				</jogo>
+				<jogo numero="13">
+					<data>16 de junho de 2014</data>
+					<horario>16:00</horario>
+					<estadio>Arena da Baixada</estadio>
+					<local>Curitiba</local>
+				</jogo>
+				<jogo numero="27">
+					<data>21 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Estádio Mineirão</estadio>
+					<local>Belo Horizonte</local>
+				</jogo>
+				<jogo numero="29">
+					<data>21 de junho de 2014</data>
+					<horario>18:00</horario>
+					<estadio>Arena Pantanal</estadio>
+					<local>Cuiab�</local>
+				</jogo>
+				<jogo numero="41">
+					<data>25 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Estádio Beira-Rio</estadio>
+					<local>Porto Alegre</local>
+				</jogo>
+				<jogo numero="42">
+					<data>25 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Arena Fonte Nova</estadio>
+					<local>Salvador</local>
+				</jogo>
+			</jogos>
+		</grupo>
+		<grupo letra="G">
+			<jogos>
+				<jogo numero="12">
+					<data>16 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Arena Fonte Nova</estadio>
+					<local>Salvador</local>
+				</jogo>
+				<jogo numero="14">
+					<data>16 de junho de 2014</data>
+					<horario>19:00</horario>
+					<estadio>Arena das Dunas</estadio>
+					<local>Natal</local>
+				</jogo>
+				<jogo numero="28">
+					<data>21 de junho de 2014</data>
+					<horario>16:00</horario>
+					<estadio>Arena Castelão</estadio>
+					<local>Fortaleza</local>
+				</jogo>
+				<jogo numero="32">
+					<data>22 de junho de 2014</data>
+					<horario>18:00</horario>
+					<estadio>Arena Amazônia</estadio>
+					<local>Manaus</local>
+				</jogo>
+				<jogo numero="45">
+					<data>26 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Arena Pernambuco</estadio>
+					<local>Recife</local>
+				</jogo>
+				<jogo numero="46">
+					<data>26 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Estádio Nacional de Brasília</estadio>
+					<local>Brasília</local>
+				</jogo>
+			</jogos>
+		</grupo>
+		<grupo letra="H">
+			<jogos>
+				<jogo numero="15">
+					<data>17 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Estádio Mineirão</estadio>
+					<local>Belo Horizonte</local>
+				</jogo>
+				<jogo numero="17">
+					<data>17 de junho de 2014</data>
+					<horario>18:00</horario>
+					<estadio>Arena Pantanal</estadio>
+					<local>Cuiabá</local>
+				</jogo>
+				<jogo numero="30">
+					<data>22 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Maracanã</estadio>
+					<local>Rio de Janeiro</local>
+				</jogo>
+				<jogo numero="31">
+					<data>22 de junho de 2014</data>
+					<horario>16:00</horario>
+					<estadio>Estádio Beira-Rio</estadio>
+					<local>Porto Alegre</local>
+				</jogo>
+				<jogo numero="47">
+					<data>26 de junho de 2014</data>
+					<horario>17:00</horario>
+					<estadio>Arena de São Paulo</estadio>
+					<local>São Paulo</local>
+				</jogo>
+				<jogo numero="48">
+					<data>26 de junho de 2014</data>
+					<horario>17:00</horario>
+					<estadio>Arena da Baixada</estadio>
+					<local>Curitiba</local>
+				</jogo>
+			</jogos>
+		</grupo>
+	</fase_de_grupos>
+	<fase_final>
+		<oitavas_de_final>
+			<jogos>
+				<jogo numero="49">
+					<data>28 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Estádio Mineirão</estadio>
+					<local>Belo Horizonte</local>
+				</jogo>
+				<jogo numero="50">
+					<data>28 de junho de 2014</data>
+					<horario>17:00</horario>
+					<estadio>Maracanã</estadio>
+					<local>Rio de Janeiro</local>
+				</jogo>
+				<jogo numero="51">
+					<data>29 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Arena Castelão</estadio>
+					<local>Fortaleza</local>
+				</jogo>
+				<jogo numero="52">
+					<data>29 de junho de 2014</data>
+					<horario>17:00</horario>
+					<estadio>Arena Pernambuco</estadio>
+					<local>Recife</local>
+				</jogo>
+				<jogo numero="53">
+					<data>30 de junho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Estádio Nacional de Brasília</estadio>
+					<local>Brasília</local>
+				</jogo>
+				<jogo numero="54">
+					<data>30 de junho de 2014</data>
+					<horario>17:00</horario>
+					<estadio>Estádio Beira-Rio</estadio>
+					<local>Porto Alegre</local>
+				</jogo>
+				<jogo numero="55">
+					<data>01 de julho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Arena de São Paulo</estadio>
+					<local>São Paulo</local>
+				</jogo>
+				<jogo numero="56">
+					<data>01 de julho de 2014</data>
+					<horario>17:00</horario>
+					<estadio>Arena Fonte Nova</estadio>
+					<local>Salvador</local>
+				</jogo>
+			</jogos>
+		</oitavas_de_final>
+		<quartas_de_final>
+			<jogos>
+				<jogo numero="57">
+					<data>04 de julho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Maracanã</estadio>
+					<local>Rio de Janeiro</local>
+				</jogo>
+				<jogo numero="58">
+					<data>04 de julho de 2014</data>
+					<horario>17:00</horario>
+					<estadio>Arena Castelão</estadio>
+					<local>Fortaleza</local>
+				</jogo>
+				<jogo numero="59">
+					<data>05 de julho de 2014</data>
+					<horario>13:00</horario>
+					<estadio>Estádio Nacional de Brasília</estadio>
+					<local>Brasília</local>
+				</jogo>
+				<jogo numero="60">
+					<data>05 de julho de 2014</data>
+					<horario>17:00</horario>
+					<estadio>Arena Fonte Nova</estadio>
+					<local>Salvador</local>
+				</jogo>
+			</jogos>
+		</quartas_de_final>
+		<semifinais>
+			<jogos>
+				<jogo numero="61">
+					<data>08 de julho de 2014</data>
+					<horario>17:00</horario>
+					<estadio>Estádio Mineirão</estadio>
+					<local>Belo Horizonte</local>
+				</jogo>
+				<jogo numero="62">
+					<data>09 de julho de 2014</data>
+					<horario>17:00</horario>
+					<estadio>Arena de São Paulo</estadio>
+					<local>São Paulo</local>
+				</jogo>
+			</jogos>
+		</semifinais>
+		<decisao_terceiro_lugar>
+			<jogo numero="63">
+				<data>12 de julho de 2014</data>
+				<horario>17:00</horario>
+				<estadio>Estádio Nacional de Brasília</estadio>
+				<local>Brasília</local>
+			</jogo>
+		</decisao_terceiro_lugar>
+		<final>
+			<jogo numero="64">
+				<data>13 de julho de 2014</data>
+				<horario>16:00</horario>
+				<estadio>Maracanã</estadio>
+				<local>Rio de Janeiro</local>
+			</jogo>
+		</final>
+	</fase_final>
+</copa_do_mundo>
