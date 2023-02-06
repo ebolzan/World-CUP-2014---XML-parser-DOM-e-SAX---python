@@ -1,0 +1,126 @@
+*{
+    overflow: hidden;
+}
+
+@media (min-width: 1250px) {
+    
+.header{
+    height: 120px;
+    align-items: center;
+    margin-left: 0px;
+    position: fixed;
+    z-index: 990;
+    align-content: center;
+    width: calc(100% - 168px);
+    
+    top: 0;
+    border: solid green 1px;
+    overflow: hidden;
+   
+}
+
+.header::before{
+    opacity: 0.65;
+    background-image: url("../img/fundo.png");   
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.footer {
+    background-image: linear-gradient(#faff15a6, #ff9c04c4);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.footer>span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    align-self: center;
+   font-style: italic;
+    width: fit-content;
+}
+
+}
+
+.accordion-button{
+    color: brown;
+    font-variant: small-caps;
+    font-size: 25px;
+    border: none;
+    border-color: black;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #dadadb14;
+    color: black;
+    border-color: black;
+}
+
+.accordion-button:focus, .accordion-button {
+    background-color: #dadadb14;
+    color: black;
+    font-weight: bold;
+    border-color: black;
+}
+
+.container{
+    
+    padding: 0;
+    overflow: visible;
+}
+
+#logo{
+    
+    background-image: url("../img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border: solid 1px green;
+    z-index: 1001;
+
+    width: 250px;
+    height: 120px;    
+}
+
+#logo:hover{
+    cursor: pointer;
+    background-size: 40%;
+    box-shadow: violet;
+}
+
+.accordion{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    overflow: visible;
+
+}
+ 
+
+.table-striped>tbody>tr>td{
+    border-bottom: 1px solid rgb(160, 148, 148);
+}
+
+.table-striped>tbody>tr>td + td + td {
+    border-top-right-radius: 10%;
+}
+
+.table-striped>tbody>tr>td:has(.dayofmonth ){
+    border-top-left-radius: 10%;
+}
+
+.dayofmonth{
+    font-size: 42px;
+    float: left;
+    text-align: right;
+    line-height: 40px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
