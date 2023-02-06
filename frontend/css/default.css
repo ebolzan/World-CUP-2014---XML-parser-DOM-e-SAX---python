@@ -1,21 +1,21 @@
 *{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 @media (min-width: 1250px) {
     
 .header{
-    height: 120px;
+    height: 250px;
     align-items: center;
     margin-left: 0px;
     position: fixed;
     z-index: 990;
     align-content: center;
-    width: calc(100% - 168px);
-    
+    width: 1320px;
     top: 0;
-    border: solid green 1px;
+    display: flex;
     overflow: hidden;
+    
    
 }
 
@@ -33,20 +33,18 @@
 
 .footer {
     background-image: linear-gradient(#faff15a6, #ff9c04c4);
-    height: 50px;
-    display: flex;
-    flex-direction: row;
+    height: 120px;    
     justify-content: center;
     margin: 0;
-    padding: 0;
+    padding-top: 10px;
+    vertical-align: middle;
 }
 
 .footer>span{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 2px;
-    align-self: center;
-   font-style: italic;
-    width: fit-content;
+    display: block;
+    height: 50px;
 }
 
 }
@@ -71,10 +69,10 @@
     border-color: black;
 }
 
-.container{
-    
+.container{    
     padding: 0;
-    overflow: visible;
+    height: 100%;
+  overflow: hidden;    
 }
 
 #logo{
@@ -83,9 +81,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-    border: solid 1px green;
     z-index: 1001;
-
     width: 250px;
     height: 120px;    
 }
@@ -95,26 +91,30 @@
     background-size: 40%;
     box-shadow: violet;
 }
+#logo+div{
+    font-size: 45px;
+    position: relative;
+    margin-left: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px #3700ff;
+
+}
 
 .accordion{
-    margin-top: 150px;
+    margin-top: 260px;
     margin-bottom: 50px;
-    overflow: visible;
-
+   overflow: hidden;
+}
+.accordion-item{
+    border: none;
+    padding: 5px 0 5px 0;
 }
  
 
 .table-striped>tbody>tr>td{
-    border-bottom: 1px solid rgb(160, 148, 148);
+    border-bottom: 1px solid rgb(179, 160, 160);
 }
 
-.table-striped>tbody>tr>td + td + td {
-    border-top-right-radius: 10%;
-}
-
-.table-striped>tbody>tr>td:has(.dayofmonth ){
-    border-top-left-radius: 10%;
-}
 
 .dayofmonth{
     font-size: 42px;
@@ -123,4 +123,5 @@
     line-height: 40px;
     margin-right: 10px;
     margin-top: 5px;
+    overflow: hidden;
 }

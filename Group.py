@@ -24,7 +24,7 @@ class Group():
 
 
     def getWinnersGroup(self):
-        sorted_x = sorted(self.indexTeam.iteritems(), key=operator.itemgetter(1))
+        sorted_x = sorted(self.indexTeam.items(), key=operator.itemgetter(1))
         first  = sorted_x[3]
         second = sorted_x[2]
 

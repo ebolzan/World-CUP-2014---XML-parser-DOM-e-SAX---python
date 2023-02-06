@@ -222,7 +222,7 @@ class Final:
         print("#################### champion #####################")
         print("#################### champion #####################")
         print (self.TheBest)
-        f = open('winner.txt', 'w')
+        f = open('winner.txt', 'wb')
         f.write(self.TheBest.encode('utf-8'))
         print("#################### champion #####################")
         print("#################### champion #####################")
