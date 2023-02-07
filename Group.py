@@ -4,6 +4,7 @@ __author__ = 'evandro'
 import random
 import operator
 from GameInfo import GameInfo
+from HistoryGames import HistoryGames, Games
 
 #class make games of groups
 class Group():
@@ -51,50 +52,70 @@ class Group():
         else:
             self.indexTeam[index2] = self.indexTeam[index2] + 3
 
-        print (r1.__str__()+" X "+r2.__str__())
+        return [r1.__str__(),r2.__str__()]
 
 
     def createGames(self, infoGames = ['date', 'time', 'adress','arena']):
         print ("------------------Jogos do grupo "+self.name +"--------------------- ")
 
+        historyGroup = HistoryGames.instance()
+        gamesList = []
+
         #game1
+
+        game1 = Games(self.name, infoGames[0], self.listTeam[0], self.listTeam[1], 0, 1)
+
+        gameDict = {self.name: game1}
+
+        historyGroup.addGame(gameDict)
+
+        historyGroup.printS()
+
+        
+
         print (infoGames[0].__str__())
         print (self.listTeam[0])
-        (self.createResult(0, 1))
+        resultGame = self.createResult(0, 1)
+        print(resultGame[0], " X ",resultGame[1])
         print(self.listTeam[1])
         print("\n")
 
         #game2
         print (infoGames[1].__str__())
         print (self.listTeam[2])
-        (self.createResult(2, 3))
+        resultGame = self.createResult(2, 3)
+        print(resultGame[0], " X ",resultGame[1])
         print(self.listTeam[3])
         print("\n")
 
         #game3
         print (infoGames[2].__str__())
         print (self.listTeam[0])
-        (self.createResult(0, 2))
+        resultGame = self.createResult(0, 2)
+        print(resultGame[0], " X ",resultGame[1])
         print(self.listTeam[2])
         print("\n")
 
         #game4
         print (infoGames[3].__str__())
         print (self.listTeam[2])
-        (self.createResult(2, 1))
+        resultGame = self.createResult(2, 1)
+        print(resultGame[0], " X ",resultGame[1])
         print (self.listTeam[1])
         print("\n")
 
         #game5
         print (infoGames[4].__str__())
         print (self.listTeam[0])
-        (self.createResult(0, 3))
+        resultGame = self.createResult(0, 3)
+        print(resultGame[0], " X ",resultGame[1])
         print (self.listTeam[3])
 
         #game6
         print (infoGames[5].__str__())
         print (self.listTeam[1])
-        (self.createResult(1, 3))
+        resultGame = self.createResult(1, 3)
+        print(resultGame[0], " X ",resultGame[1])
         print (self.listTeam[3])
         print("\n")
 
