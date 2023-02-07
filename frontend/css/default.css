@@ -11,7 +11,7 @@
     position: fixed;
     z-index: 990;
     align-content: center;
-    width: 1320px;
+    width: 100%;
     top: 0;
     display: flex;
     overflow: hidden;
