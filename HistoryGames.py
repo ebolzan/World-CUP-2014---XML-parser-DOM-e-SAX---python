@@ -15,9 +15,9 @@ class HistoryGames:
         self.historyList.append(value)
     
     def printS(self) -> None:
-        for gameUnit in self.historyList:
-            for fase, game in gameUnit.items():
-                print (game)
+        for gameGroup in self.historyList:
+            for gameUnit in gameGroup:
+                print(gameUnit)
                 
     
 class Games:
