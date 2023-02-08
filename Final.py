@@ -2,6 +2,7 @@
 __author__ = 'evandro'
 
 import random
+from HistoryGames import *
 
 class Final:
 
@@ -17,7 +18,7 @@ class Final:
         self.groupG = []
         self.groupH = []
 
-        
+        self.historyGames = HistoryGames.instance()
 
     
         #string list informations games
@@ -105,15 +106,12 @@ class Final:
 
     def runGame(self, infoGeneral:str ,teamA:str, teamB:str, phaseName:str):
 
-        print (infoGeneral)
-        print (teamA)
         result = self.createResult(teamA, teamB, phaseName)
-        print(result[0], result[1])
-        print (teamB)
-        print("\n")
+        
+        print (infoGeneral, teamA, result[0]," X ", result[1], teamB, sep="\n")
 
-        var = input()
-
+        self.historyGames.addGame(Games(phaseName, infoGeneral, teamA, teamB, result[0], result[1]))
+                
 
     def oitavas(self):
         print ("---------------------------- Oitavas de Final ----------------------------")
@@ -179,3 +177,5 @@ class Final:
         print("#################### champion #####################")
         print("#################### champion #####################")
         print("#################### champion #####################")
+
+        self.historyGames.saveJsonInFile()

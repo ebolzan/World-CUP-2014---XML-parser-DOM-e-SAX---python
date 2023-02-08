@@ -120,7 +120,8 @@ class Group():
 
         game6 = Games(self.name, infoGames[5], self.listTeam[1], self.listTeam[3], resultGame[0], resultGame[1])
 
-        historyGroup.addGame([game1, game2, game3, game4, game5, game6])
+        for gameOne in [game1, game2, game3, game4, game5, game6]:
+             historyGroup.addGame(gameOne)
 
         historyGroup.printS()
 
