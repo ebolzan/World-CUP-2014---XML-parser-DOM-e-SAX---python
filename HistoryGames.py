@@ -30,11 +30,20 @@ class HistoryGames:
         jsonString = json.dumps(self.historyList, cls=GameEncoder,  ensure_ascii=False)
         return(jsonString)
     
-    def saveJsonInFile(self, filePath="outfile.json"):
+    def saveJsonInFile(self, filePath="frontend/index.html"):
 
         try:
-            with open(filePath, "w") as outfile:
-                outfile.write(self.toJson())
+            filedata = ""
+
+            with open(filePath, 'r', encoding="utf-8") as file :
+                filedata = file.read()
+            javascript = "const games = "
+            javascript += self.toJson()
+
+            output = filedata.replace("#campion1", javascript)
+
+            with open(filePath, "w", encoding="utf-8") as outfile:
+                outfile.write(output)
         except Exception as ex:
             print(ex)
                 
