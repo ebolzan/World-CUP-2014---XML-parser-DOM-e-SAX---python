@@ -26,7 +26,7 @@ class DateTimeGame{
     }
 
     get Arena(){
-        return this.arena;
+        return this.arena.toString();
     }
 
     get numericDate(){
@@ -50,11 +50,40 @@ class Game{
         this.teamB = teamB.split(":")[1];       
     }
 
+    get PhaseName(){
+        return this.phaseName;
+    }
+
+    get TeamA(){
+        return this.TeamA;
+    }
+
+    get TeamB(){
+        return this.teamB;
+    }
+
+    get partDay(){
+        return this.datetimeInfo.Day;
+    }
+
+    get partMonthYear(){
+        return this.datetimeInfo.MonthAndYear;
+    }
+
+    get partNumericDate(){
+        return this.datetimeInfo.numericDate;
+
+    }
+
+    get placeGame(){
+        return this.datetimeInfo.Arena;
+    }
+
     
 }
 
 
-
+/* 
 const games_of= [];
 
 for(gameOne of games){
@@ -63,9 +92,10 @@ for(gameOne of games){
     games_of.push(new Game(a, b, c, d));
 }
 
-console.log(games_of);
+//console.log(games_of);
 
 for(obj of games_of){
 
-    console.log(obj.datetimeInfo.numericDate);
+    console.log(obj.placeGame);
 }
+ */
