@@ -59,7 +59,7 @@ class Games:
     
 
     def formatJson(self):
-        stringOut =  "fase: {}, datetime: {}, timeA: {}, timeB: {}".format(self.faseGame, self.infoGeneral, self.teamA, self.teamB)
+        stringOut =  "fase: {}, datetime: {}, timeA: {}, timeB: {}, resultA: {}, resultB: {}".format(self.faseGame, self.infoGeneral, self.teamA, self.teamB, self.resultA, self.resultB)
         return stringOut
 
     def __str__(self) -> str:

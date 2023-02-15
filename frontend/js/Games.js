@@ -46,6 +46,8 @@ class Game{
         this.datetimeInfo = new DateTimeGame(datetimeInfo);
 
         this.teamA = teamA.split(":")[1];
+
+        this.resultA = 
        
         this.teamB = teamB.split(":")[1];       
     }
@@ -55,7 +57,7 @@ class Game{
     }
 
     get TeamA(){
-        return this.TeamA;
+        return this.teamA;
     }
 
     get TeamB(){
@@ -77,6 +79,10 @@ class Game{
 
     get placeGame(){
         return this.datetimeInfo.Arena;
+    }
+
+    get partHour(){
+        return this.datetimeInfo.Hour;
     }
 
     
