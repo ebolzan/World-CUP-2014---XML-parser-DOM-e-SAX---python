@@ -110,7 +110,14 @@ class Final:
         
         print (infoGeneral, teamA, result[0]," X ", result[1], teamB, sep="\n")
 
-        self.historyGames.addGame(Games(phaseName, infoGeneral, teamA, teamB, result[0], result[1]))
+        PHASE = {
+            "quartas": "oitavas",
+            "semi": "quartas",
+            "final": "semi",
+            "gain": "final"
+        }
+
+        self.historyGames.addGame(Games(PHASE[phaseName], infoGeneral, teamA, teamB, result[0], result[1]))
                 
 
     def oitavas(self):
@@ -177,5 +184,8 @@ class Final:
         print("#################### champion #####################")
         print("#################### champion #####################")
         print("#################### champion #####################")
+
+        self.historyGames.addGame(Games("campion", "info", self.TheBest, self.TheBest, 0, 0))
+
 
         self.historyGames.saveJsonInFile()

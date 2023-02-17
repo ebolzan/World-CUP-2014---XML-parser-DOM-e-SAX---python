@@ -39,17 +39,19 @@ class DateTimeGame{
 
 
 class Game{
-    constructor(phaseName, datetimeInfo, teamA, teamB)
+    constructor(phaseName, datetimeInfo, teamA, teamB, resultA, resultB)
     {        
         this.phaseName = phaseName.split(":")[1];
     
         this.datetimeInfo = new DateTimeGame(datetimeInfo);
 
         this.teamA = teamA.split(":")[1];
-
-        this.resultA = 
        
-        this.teamB = teamB.split(":")[1];       
+        this.teamB = teamB.split(":")[1]; 
+        
+        this.resultA = resultA.split(":")[1];
+
+        this.resultB = resultB.split(":")[1];
     }
 
     get PhaseName(){
@@ -62,6 +64,14 @@ class Game{
 
     get TeamB(){
         return this.teamB;
+    }
+
+    get ResultA(){
+        return this.resultA;
+    }
+
+    get ResultB(){
+        return this.resultB;
     }
 
     get partDay(){

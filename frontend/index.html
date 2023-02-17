@@ -10,9 +10,7 @@
   <link href="css/default.css" rel="stylesheet">
 
   <script>
-    const games = ["fase: A, datetime: 12 de junho de 2014 17:00 Arena de São Paulo São Paulo , timeA: Brasil, timeB: Gana", "fase: A, datetime: 13 de junho de 2014 13:00 Arena das Dunas Natal , timeA: Japão, timeB: Grécia",
-     "fase: A, datetime: 17 de junho de 2014 16:00 Arena Castelão Fortaleza , timeA: Brasil, timeB: Japão", "fase: A, datetime: 18 de junho de 2014 18:00 Arena Amazônia Manaus , timeA: Japão, timeB: Gana", "fase: A, datetime: 23 de junho de 2014 17:00 Estádio Nacional de Brasília Brasília , timeA: Brasil, timeB: Grécia", "fase: A, datetime: 23 de junho de 2014 17:00 Arena Pernambuco Recife , timeA: Gana, timeB: Grécia",
-      "fase: B, datetime: 13 de junho de 2014 16:00 Arena Fonte Nova Salvador , timeA: Espanha, timeB: Chile", "fase: B, datetime: 13 de junho de 2014 18:00 Arena Pantanal Cuiabá , timeA: México, timeB: Portugal", "fase: B, datetime: 18 de junho de 2014 13:00 Estádio Beira-Rio Porto Alegre , timeA: Espanha, timeB: México", "fase: B, datetime: 18 de junho de 2014 16:00 Maracanã Rio de Janeiro , timeA: México, timeB: Chile", "fase: B, datetime: 23 de junho de 2014 13:00 Arena da Baixada Curitiba , timeA: Espanha, timeB: Portugal", "fase: B, datetime: 23 de junho de 2014 13:00 Arena de São Paulo São Paulo , timeA: Chile, timeB: Portugal", "fase: C, datetime: 14 de junho de 2014 13:00 Estádio Mineirão Belo Horizonte , timeA: Alemanha, timeB: Itália", "fase: C, datetime: 14 de junho de 2014 22:00 Arena Pernambuco Recife , timeA: Irã, timeB: França", "fase: C, datetime: 19 de junho de 2014 13:00 Estádio Nacional de Brasília Brasília , timeA: Alemanha, timeB: Irã", "fase: C, datetime: 19 de junho de 2014 19:00 Arena das Dunas Natal , timeA: Irã, timeB: Itália", "fase: C, datetime: 24 de junho de 2014 16:00 Arena Pantanal Cuiabá , timeA: Alemanha, timeB: França", "fase: C, datetime: 24 de junho de 2014 17:00 Arena Castelão Fortaleza , timeA: Itália, timeB: França", "fase: D, datetime: 14 de junho de 2014 16:00 Arena Castelão Fortaleza , timeA: Argentina, timeB: Camarões", "fase: D, datetime: 14 de junho de 2014 18:00 Arena Amazônia Manaus , timeA: Coreia do Sul, timeB: Rússia", "fase: D, datetime: 19 de junho de 2014 16:00 Arena de São Paulo São Paulo , timeA: Argentina, timeB: Coreia do Sul", "fase: D, datetime: 20 de junho de 2014 13:00 Arena Pernambuco Recife , timeA: Coreia do Sul, timeB: Camarões", "fase: D, datetime: 24 de junho de 2014 13:00 Arena das Dunas Natal , timeA: Argentina, timeB: Rússia", "fase: D, datetime: 24 de junho de 2014 13:00 Est�dio Mineir�o Belo Horizonte , timeA: Camarões, timeB: Rússia", "fase: E, datetime: 15 de junho de 2014 13:00 Estádio Nacional de Brasília Brasília , timeA: Colômbia, timeB: Argélia", "fase: E, datetime: 15 de junho de 2014 16:00 Estádio Beira-Rio Porto Alegre , timeA: Cista Rica, timeB: Inglaterra", "fase: E, datetime: 20 de junho de 2014 16:00 Arena Fonte Nova Salvador , timeA: Colômbia, timeB: Cista Rica", "fase: E, datetime: 20 de junho de 2014 19:00 Arena da Baixada Curitiba , timeA: Cista Rica, timeB: Argélia", "fase: E, datetime: 25 de junho de 2014 16:00 Arena Amazônia Manaus , timeA: Colômbia, timeB: Inglaterra", "fase: E, datetime: 25 de junho de 2014 17:00 Maracanã Rio de Janeiro , timeA: Argélia, timeB: Inglaterra", "fase: F, datetime: 15 de junho de 2014 19:00 Maracanã Rio de Janeiro , timeA: Bélgica, timeB: Costa do Marfim", "fase: F, datetime: 16 de junho de 2014 16:00 Arena da Baixada Curitiba , timeA: Estados Unidos, timeB: Bósnia e Herzegovina", "fase: F, datetime: 21 de junho de 2014 13:00 Estádio Mineirão Belo Horizonte , timeA: Bélgica, timeB: Estados Unidos", "fase: F, datetime: 21 de junho de 2014 18:00 Arena Pantanal Cuiab� , timeA: Estados Unidos, timeB: Costa do Marfim", "fase: F, datetime: 25 de junho de 2014 13:00 Estádio Beira-Rio Porto Alegre , timeA: Bélgica, timeB: Bósnia e Herzegovina", "fase: F, datetime: 25 de junho de 2014 13:00 Arena Fonte Nova Salvador , timeA: Costa do Marfim, timeB: Bósnia e Herzegovina", "fase: G, datetime: 16 de junho de 2014 13:00 Arena Fonte Nova Salvador , timeA: Uruguai, timeB: Nigéria", "fase: G, datetime: 16 de junho de 2014 19:00 Arena das Dunas Natal , timeA: Austrália, timeB: Países Baixos", "fase: G, datetime: 21 de junho de 2014 16:00 Arena Castelão Fortaleza , timeA: Uruguai, timeB: Austrália", "fase: G, datetime: 22 de junho de 2014 18:00 Arena Amazônia Manaus , timeA: Austrália, timeB: Nigéria", "fase: G, datetime: 26 de junho de 2014 13:00 Arena Pernambuco Recife , timeA: Uruguai, timeB: Países Baixos", "fase: G, datetime: 26 de junho de 2014 13:00 Estádio Nacional de Brasília Brasília , timeA: Nigéria, timeB: Países Baixos", "fase: H, datetime: 17 de junho de 2014 13:00 Estádio Mineirão Belo Horizonte , timeA: Suíça, timeB: Equador", "fase: H, datetime: 17 de junho de 2014 18:00 Arena Pantanal Cuiabá , timeA: Honduras, timeB: Croácia", "fase: H, datetime: 22 de junho de 2014 13:00 Maracanã Rio de Janeiro , timeA: Suíça, timeB: Honduras", "fase: H, datetime: 22 de junho de 2014 16:00 Estádio Beira-Rio Porto Alegre , timeA: Honduras, timeB: Equador", "fase: H, datetime: 26 de junho de 2014 17:00 Arena de São Paulo São Paulo , timeA: Suíça, timeB: Croácia", "fase: H, datetime: 26 de junho de 2014 17:00 Arena da Baixada Curitiba , timeA: Equador, timeB: Croácia", "fase: quartas, datetime: 28 de junho de 2014 13:00 Estádio Mineirão Belo Horizonte , timeA: Gana, timeB: Equador", "fase: quartas, datetime: 28 de junho de 2014 17:00 Maracanã Rio de Janeiro , timeA: Suíça, timeB: Grécia", "fase: quartas, datetime: 29 de junho de 2014 13:00 Arena Castelão Fortaleza , timeA: México, timeB: Nigéria", "fase: quartas, datetime: 29 de junho de 2014 17:00 Arena Pernambuco Recife , timeA: Países Baixos, timeB: Portugal", "fase: quartas, datetime: 30 de junho de 2014 13:00 Estádio Nacional de Brasília Brasília , timeA: Irã, timeB: Bélgica", "fase: quartas, datetime: 30 de junho de 2014 17:00 Estádio Beira-Rio Porto Alegre , timeA: Costa do Marfim, timeB: Alemanha", "fase: quartas, datetime: 01 de julho de 2014 13:00 Arena de São Paulo São Paulo , timeA: Rússia, timeB: Colômbia", "fase: quartas, datetime: 01 de julho de 2014 17:00 Arena Fonte Nova Salvador , timeA: Inglaterra, timeB: Camarões", "fase: semi, datetime: 04 de julho de 2014 13:00 Maracanã Rio de Janeiro , timeA: Equador, timeB: Inglaterra", "fase: semi, datetime: 04 de julho de 2014 17:00 Arena Castelão Fortaleza , timeA: Suíça, timeB: Rússia", "fase: semi, datetime: 05 de julho de 2014 13:00 Estádio Nacional de Brasília Brasília , timeA: México, timeB: Costa do Marfim", "fase: semi, datetime: 05 de julho de 2014 17:00 Arena Fonte Nova Salvador , timeA: Países Baixos, timeB: Bélgica", "fase: final, datetime: 08 de julho de 2014 17:00 Estádio Mineirão Belo Horizonte , timeA: Equador, timeB: Países Baixos", "fase: final, datetime: 09 de julho de 2014 17:00 Arena de São Paulo São Paulo , timeA: Suíça, timeB: México", "fase: gain, datetime: 13 de julho de 2014 16:00 Maracanã Rio de Janeiro , timeA: Equador, timeB: Suíça"]
+   const games = ["fase: A, datetime: 12 de junho de 2014 17:00 Arena de São Paulo São Paulo , timeA: Brasil, timeB: Itália, resultA: 4, resultB: 5", "fase: A, datetime: 13 de junho de 2014 13:00 Arena das Dunas Natal , timeA: Coreia do Sul, timeB: Países Baixos, resultA: 6, resultB: 3", "fase: A, datetime: 17 de junho de 2014 16:00 Arena Castelão Fortaleza , timeA: Brasil, timeB: Coreia do Sul, resultA: 5, resultB: 4", "fase: A, datetime: 18 de junho de 2014 18:00 Arena Amazônia Manaus , timeA: Coreia do Sul, timeB: Itália, resultA: 5, resultB: 2", "fase: A, datetime: 23 de junho de 2014 17:00 Estádio Nacional de Brasília Brasília , timeA: Brasil, timeB: Países Baixos, resultA: 4, resultB: 5", "fase: A, datetime: 23 de junho de 2014 17:00 Arena Pernambuco Recife , timeA: Itália, timeB: Países Baixos, resultA: 1, resultB: 2", "fase: B, datetime: 13 de junho de 2014 16:00 Arena Fonte Nova Salvador , timeA: Espanha, timeB: Argélia, resultA: 3, resultB: 6", "fase: B, datetime: 13 de junho de 2014 18:00 Arena Pantanal Cuiabá , timeA: Irã, timeB: Bósnia e Herzegovina, resultA: 6, resultB: 1", "fase: B, datetime: 18 de junho de 2014 13:00 Estádio Beira-Rio Porto Alegre , timeA: Espanha, timeB: Irã, resultA: 5, resultB: 4", "fase: B, datetime: 18 de junho de 2014 16:00 Maracanã Rio de Janeiro , timeA: Irã, timeB: Argélia, resultA: 6, resultB: 3", "fase: B, datetime: 23 de junho de 2014 13:00 Arena da Baixada Curitiba , timeA: Espanha, timeB: Bósnia e Herzegovina, resultA: 2, resultB: 3", "fase: B, datetime: 23 de junho de 2014 13:00 Arena de São Paulo São Paulo , timeA: Argélia, timeB: Bósnia e Herzegovina, resultA: 2, resultB: 6", "fase: C, datetime: 14 de junho de 2014 13:00 Estádio Mineirão Belo Horizonte , timeA: Alemanha, timeB: Gana, resultA: 4, resultB: 6", "fase: C, datetime: 14 de junho de 2014 22:00 Arena Pernambuco Recife , timeA: Honduras, timeB: Portugal, resultA: 1, resultB: 2", "fase: C, datetime: 19 de junho de 2014 13:00 Estádio Nacional de Brasília Brasília , timeA: Alemanha, timeB: Honduras, resultA: 4, resultB: 2", "fase: C, datetime: 19 de junho de 2014 19:00 Arena das Dunas Natal , timeA: Honduras, timeB: Gana, resultA: 4, resultB: 5", "fase: C, datetime: 24 de junho de 2014 16:00 Arena Pantanal Cuiabá , timeA: Alemanha, timeB: Portugal, resultA: 5, resultB: 1", "fase: C, datetime: 24 de junho de 2014 17:00 Arena Castelão Fortaleza , timeA: Gana, timeB: Portugal, resultA: 6, resultB: 2", "fase: D, datetime: 14 de junho de 2014 16:00 Arena Castelão Fortaleza , timeA: Argentina, timeB: Camarões, resultA: 4, resultB: 2", "fase: D, datetime: 14 de junho de 2014 18:00 Arena Amazônia Manaus , timeA: Cista Rica, timeB: França, resultA: 1, resultB: 3", "fase: D, datetime: 19 de junho de 2014 16:00 Arena de São Paulo São Paulo , timeA: Argentina, timeB: Cista Rica, resultA: 1, resultB: 2", "fase: D, datetime: 20 de junho de 2014 13:00 Arena Pernambuco Recife , timeA: Cista Rica, timeB: Camarões, resultA: 4, resultB: 2", "fase: D, datetime: 24 de junho de 2014 13:00 Arena das Dunas Natal , timeA: Argentina, timeB: França, resultA: 2, resultB: 4", "fase: D, datetime: 24 de junho de 2014 13:00 Est�dio Mineir�o Belo Horizonte , timeA: Camarões, timeB: França, resultA: 4, resultB: 6", "fase: E, datetime: 15 de junho de 2014 13:00 Estádio Nacional de Brasília Brasília , timeA: Colômbia, timeB: Chile, resultA: 1, resultB: 3", "fase: E, datetime: 15 de junho de 2014 16:00 Estádio Beira-Rio Porto Alegre , timeA: México, timeB: Croácia, resultA: 2, resultB: 3", "fase: E, datetime: 20 de junho de 2014 16:00 Arena Fonte Nova Salvador , timeA: Colômbia, timeB: México, resultA: 3, resultB: 4", "fase: E, datetime: 20 de junho de 2014 19:00 Arena da Baixada Curitiba , timeA: México, timeB: Chile, resultA: 5, resultB: 1", "fase: E, datetime: 25 de junho de 2014 16:00 Arena Amazônia Manaus , timeA: Colômbia, timeB: Croácia, resultA: 1, resultB: 4", "fase: E, datetime: 25 de junho de 2014 17:00 Maracanã Rio de Janeiro , timeA: Chile, timeB: Croácia, resultA: 1, resultB: 2", "fase: F, datetime: 15 de junho de 2014 19:00 Maracanã Rio de Janeiro , timeA: Bélgica, timeB: Equador, resultA: 1, resultB: 5", "fase: F, datetime: 16 de junho de 2014 16:00 Arena da Baixada Curitiba , timeA: Estados Unidos, timeB: Grécia, resultA: 4, resultB: 2", "fase: F, datetime: 21 de junho de 2014 13:00 Estádio Mineirão Belo Horizonte , timeA: Bélgica, timeB: Estados Unidos, resultA: 5, resultB: 1", "fase: F, datetime: 21 de junho de 2014 18:00 Arena Pantanal Cuiab� , timeA: Estados Unidos, timeB: Equador, resultA: 3, resultB: 4", "fase: F, datetime: 25 de junho de 2014 13:00 Estádio Beira-Rio Porto Alegre , timeA: Bélgica, timeB: Grécia, resultA: 2, resultB: 3", "fase: F, datetime: 25 de junho de 2014 13:00 Arena Fonte Nova Salvador , timeA: Equador, timeB: Grécia, resultA: 1, resultB: 2", "fase: G, datetime: 16 de junho de 2014 13:00 Arena Fonte Nova Salvador , timeA: Uruguai, timeB: Costa do Marfim, resultA: 4, resultB: 6", "fase: G, datetime: 16 de junho de 2014 19:00 Arena das Dunas Natal , timeA: Austrália, timeB: Inglaterra, resultA: 2, resultB: 1", "fase: G, datetime: 21 de junho de 2014 16:00 Arena Castelão Fortaleza , timeA: Uruguai, timeB: Austrália, resultA: 3, resultB: 5", "fase: G, datetime: 22 de junho de 2014 18:00 Arena Amazônia Manaus , timeA: Austrália, timeB: Costa do Marfim, resultA: 5, resultB: 3", "fase: G, datetime: 26 de junho de 2014 13:00 Arena Pernambuco Recife , timeA: Uruguai, timeB: Inglaterra, resultA: 4, resultB: 6", "fase: G, datetime: 26 de junho de 2014 13:00 Estádio Nacional de Brasília Brasília , timeA: Costa do Marfim, timeB: Inglaterra, resultA: 4, resultB: 5", "fase: H, datetime: 17 de junho de 2014 13:00 Estádio Mineirão Belo Horizonte , timeA: Suíça, timeB: Nigéria, resultA: 6, resultB: 2", "fase: H, datetime: 17 de junho de 2014 18:00 Arena Pantanal Cuiabá , timeA: Japão, timeB: Rússia, resultA: 4, resultB: 2", "fase: H, datetime: 22 de junho de 2014 13:00 Maracanã Rio de Janeiro , timeA: Suíça, timeB: Japão, resultA: 3, resultB: 5", "fase: H, datetime: 22 de junho de 2014 16:00 Estádio Beira-Rio Porto Alegre , timeA: Japão, timeB: Nigéria, resultA: 2, resultB: 5", "fase: H, datetime: 26 de junho de 2014 17:00 Arena de São Paulo São Paulo , timeA: Suíça, timeB: Rússia, resultA: 2, resultB: 3", "fase: H, datetime: 26 de junho de 2014 17:00 Arena da Baixada Curitiba , timeA: Nigéria, timeB: Rússia, resultA: 5, resultB: 2", "fase: oitavas, datetime: 28 de junho de 2014 13:00 Estádio Mineirão Belo Horizonte , timeA: Países Baixos, timeB: Nigéria, resultA: 1, resultB: 6", "fase: oitavas, datetime: 28 de junho de 2014 17:00 Maracanã Rio de Janeiro , timeA: Japão, timeB: Coreia do Sul, resultA: 2, resultB: 1", "fase: oitavas, datetime: 29 de junho de 2014 13:00 Arena Castelão Fortaleza , timeA: Bósnia e Herzegovina, timeB: Inglaterra, resultA: 4, resultB: 2", "fase: oitavas, datetime: 29 de junho de 2014 17:00 Arena Pernambuco Recife , timeA: Austrália, timeB: Irã, resultA: 1, resultB: 2", "fase: oitavas, datetime: 30 de junho de 2014 13:00 Estádio Nacional de Brasília Brasília , timeA: Gana, timeB: Equador, resultA: 6, resultB: 5", "fase: oitavas, datetime: 30 de junho de 2014 17:00 Estádio Beira-Rio Porto Alegre , timeA: Grécia, timeB: Alemanha, resultA: 4, resultB: 5", "fase: oitavas, datetime: 01 de julho de 2014 13:00 Arena de São Paulo São Paulo , timeA: França, timeB: México, resultA: 6, resultB: 4", "fase: oitavas, datetime: 01 de julho de 2014 17:00 Arena Fonte Nova Salvador , timeA: Croácia, timeB: Cista Rica, resultA: 6, resultB: 1", "fase: quartas, datetime: 04 de julho de 2014 13:00 Maracanã Rio de Janeiro , timeA: Nigéria, timeB: Croácia, resultA: 2, resultB: 6", "fase: quartas, datetime: 04 de julho de 2014 17:00 Arena Castelão Fortaleza , timeA: Japão, timeB: França, resultA: 2, resultB: 3", "fase: quartas, datetime: 05 de julho de 2014 13:00 Estádio Nacional de Brasília Brasília , timeA: Bósnia e Herzegovina, timeB: Alemanha, resultA: 1, resultB: 2", "fase: quartas, datetime: 05 de julho de 2014 17:00 Arena Fonte Nova Salvador , timeA: Irã, timeB: Gana, resultA: 4, resultB: 3", "fase: semi, datetime: 08 de julho de 2014 17:00 Estádio Mineirão Belo Horizonte , timeA: Croácia, timeB: Irã, resultA: 6, resultB: 5", "fase: semi, datetime: 09 de julho de 2014 17:00 Arena de São Paulo São Paulo , timeA: França, timeB: Alemanha, resultA: 2, resultB: 6", "fase: final, datetime: 13 de julho de 2014 16:00 Maracanã Rio de Janeiro , timeA: Croácia, timeB: Alemanha, resultA: 4, resultB: 2", "fase: campion, datetime: info, timeA: Croácia, timeB: Croácia, resultA: 0, resultB: 0"]
   </script>
 
 </head>
@@ -48,8 +46,8 @@
               const games_of = [];
               for (let gameOne of games) {
                 //  console.log(gameOne);
-                let [a, b, c, d] = gameOne.split(",", 4);
-                games_of.push(new Game(a, b, c, d));
+                let [phase, info, teamA, teamB, resultA, resultB] = gameOne.split(",", 6);
+                games_of.push(new Game(phase, info, teamA, teamB, resultA, resultB));
               }                     
             </script>
 
@@ -71,7 +69,8 @@
                           `
                               <tr class="align-middle">
                                 <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
-                                <td class="align-middle">${obj.TeamA}  <a href="#" class="btn btn-primary">3</a> X  <a href="#" class="btn btn-primary">0</a> ${obj.TeamB}</td>
+                                <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
+                                   <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
                                 <td class="text-start">
                                     Copa do Mundo 2014<br>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
@@ -104,25 +103,26 @@
                   <script>
 
                     for (let obj of games_of) {
-                      console.log(obj.partNumericDate);
+                     
 
                       if (obj.PhaseName.trim() == 'B') {
 
                         document.write(
                           `
-                              <tr class="align-middle">
-                                <td class="text-start py-5"> <div class="dayofmonth">25</div> <div>JOGO #34</div> de junho de 2014</td>
-                                <td class="align-middle">Brasil  <a href="#" class="btn btn-primary">3</a> X  <a href="#" class="btn btn-primary">0</a> Gana</td>
+                          <tr class="align-middle">
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
+                                   <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
                                 <td class="text-start">
                                     Copa do Mundo 2014<br>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
                                     <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
                                     <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-                                  </svg> 21/01/2023 às 13:00 <br>
+                                  </svg> ${obj.partNumericDate} às ${obj.partHour} <br>
                                 
                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                                  </svg>  Estádio Centenário.
+                                  </svg> ${obj.placeGame}.
                                 </td>
                               </tr>
                               `);
@@ -135,11 +135,246 @@
             </div>
 
 
-          </div>
+            <div class="card text-center">
+              <div class="card-header">
+                <h3>Grupo C</h3>
+              </div>
+              <div class="card-body">
 
+                <table class="table table-striped">
+                  <script>
+
+                    for (let obj of games_of) {
+                     
+                      if (obj.PhaseName.trim() == 'C') {
+
+                        document.write(
+                          `
+                          <tr class="align-middle">
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
+                                   <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
+                                <td class="text-start">
+                                    Copa do Mundo 2014<br>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                                    <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg> ${obj.partNumericDate} às ${obj.partHour} <br>
+                                
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                  </svg> ${obj.placeGame}.
+                                </td>
+                              </tr>
+                              `);
+                      }
+                    }                           
+                  </script>
+                </table>
+              </div>
+            </div>
+
+            <div class="card text-center">
+              <div class="card-header">
+                <h3>Grupo D</h3>
+              </div>
+              <div class="card-body">
+
+                <table class="table table-striped">
+                  <script>
+
+                    for (let obj of games_of) {
+                     
+                      if (obj.PhaseName.trim() == 'D') {
+
+                        document.write(
+                          `
+                          <tr class="align-middle">
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
+                                   <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
+                                <td class="text-start">
+                                    Copa do Mundo 2014<br>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                                    <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg> ${obj.partNumericDate} às ${obj.partHour} <br>
+                                
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                  </svg> ${obj.placeGame}.
+                                </td>
+                              </tr>
+                              `);
+                      }
+                    }                           
+                  </script>
+                </table>
+              </div>
+            </div>
+
+            <div class="card text-center">
+              <div class="card-header">
+                <h3>Grupo E</h3>
+              </div>
+              <div class="card-body">
+
+                <table class="table table-striped">
+                  <script>
+
+                    for (let obj of games_of) {
+                     
+                      if (obj.PhaseName.trim() == 'E') {
+
+                        document.write(
+                          `
+                          <tr class="align-middle">
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
+                                   <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
+                                <td class="text-start">
+                                    Copa do Mundo 2014<br>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                                    <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg> ${obj.partNumericDate} às ${obj.partHour} <br>
+                                
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                  </svg> ${obj.placeGame}.
+                                </td>
+                              </tr>
+                              `);
+                      }
+                    }                           
+                  </script>
+                </table>
+              </div>
+            </div>
+
+            <div class="card text-center">
+              <div class="card-header">
+                <h3>Grupo F</h3>
+              </div>
+              <div class="card-body">
+
+                <table class="table table-striped">
+                  <script>
+
+                    for (let obj of games_of) {
+                     
+                      if (obj.PhaseName.trim() == 'F') {
+
+                        document.write(
+                          `
+                          <tr class="align-middle">
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
+                                   <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
+                                <td class="text-start">
+                                    Copa do Mundo 2014<br>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                                    <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg> ${obj.partNumericDate} às ${obj.partHour} <br>
+                                
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                  </svg> ${obj.placeGame}.
+                                </td>
+                              </tr>
+                              `);
+                      }
+                    }                           
+                  </script>
+                </table>
+              </div>
+            </div>
+
+
+            <div class="card text-center">
+              <div class="card-header">
+                <h3>Grupo G</h3>
+              </div>
+              <div class="card-body">
+
+                <table class="table table-striped">
+                  <script>
+
+                    for (let obj of games_of) {
+                     
+                      if (obj.PhaseName.trim() == 'G') {
+
+                        document.write(
+                          `
+                          <tr class="align-middle">
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
+                                   <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
+                                <td class="text-start">
+                                    Copa do Mundo 2014<br>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                                    <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg> ${obj.partNumericDate} às ${obj.partHour} <br>
+                                
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                  </svg> ${obj.placeGame}.
+                                </td>
+                              </tr>
+                              `);
+                      }
+                    }                           
+                  </script>
+                </table>
+              </div>
+            </div>
+
+
+            <div class="card text-center">
+              <div class="card-header">
+                <h3>Grupo H</h3>
+              </div>
+              <div class="card-body">
+
+                <table class="table table-striped">
+                  <script>
+
+                    for (let obj of games_of) {
+                     
+                      if (obj.PhaseName.trim() == 'H') {
+
+                        document.write(
+                          `
+                          <tr class="align-middle">
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
+                                   <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
+                                <td class="text-start">
+                                    Copa do Mundo 2014<br>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                                    <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg> ${obj.partNumericDate} às ${obj.partHour} <br>
+                                
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                  </svg> ${obj.placeGame}.
+                                </td>
+                              </tr>
+                              `);
+                      }
+                    }                           
+                  </script>
+                </table>
+              </div>
+            </div>
+          </div>
 
         </div>
       </div>
+      
       <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -153,90 +388,38 @@
           <div class="accordion-body">
             <div class="card text-center">
               <div class="card-header">
-                <h3>Grupo A</h3>
+                <h3>Jogos</h3>
               </div>
               <div class="card-body">
 
                 <table class="table table-striped">
-                  <tr class="align-middle">
-                    <td class="text-start py-5">
-                      <div class="dayofmonth">25</div>
-                      <div>JOGO #34</div> de junho de 2014
-                    </td>
-                    <td class="align-middle">Brasil <a href="#" class="btn btn-primary">3</a> X <a href="#"
-                        class="btn btn-primary">0</a> Gana</td>
-                    <td class="text-start">
-                      Copa do Mundo 2014<br>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-calendar-date" viewBox="0 0 16 16">
-                        <path
-                          d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
-                        <path
-                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                      </svg> 21/01/2023 às 13:00 <br>
+                  <script>
+                    for (let obj of games_of) {
+                     
+                      if (obj.PhaseName.trim() == 'oitavas') {
 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                      </svg> Estádio Centenário.
-                    </td>
-                  </tr>
-
-                  <tr class="align-middle">
-                    <td class="text-start py-5">
-                      <div class="dayofmonth">25</div>
-                      <div>JOGO #34</div> de junho de 2014
-                    </td>
-                    <td class="align-middle">Brasil <a href="#" class="btn btn-primary">3</a> X <a href="#"
-                        class="btn btn-primary">0</a> Gana</td>
-                    <td class="text-start">
-                      Copa do Mundo 2014<br>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-calendar-date" viewBox="0 0 16 16">
-                        <path
-                          d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
-                        <path
-                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                      </svg> 21/01/2023 às 13:00 <br>
-
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                      </svg> Estádio Centenário.
-                    </td>
-                  </tr>
-
-                  <tr class="align-middle">
-                    <td class="text-start py-5">
-                      <div class="dayofmonth">25</div>
-                      <div>JOGO #34</div> de junho de 2014
-                    </td>
-                    <td class="align-middle">Brasil <a href="#" class="btn btn-primary">3</a> X <a href="#"
-                        class="btn btn-primary">0</a> Gana</td>
-                    <td class="text-start">
-                      Copa do Mundo 2014<br>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-calendar-date" viewBox="0 0 16 16">
-                        <path
-                          d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
-                        <path
-                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                      </svg> 21/01/2023 às 13:00 <br>
-
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                      </svg> Estádio Centenário.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Data e horas</td>
-                    <td>Jogos</td>
-                    <td>local e data</td>
-                  </tr>
+                        document.write(
+                          `
+                          <tr class="align-middle">
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
+                                   <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
+                                <td class="text-start">
+                                    Copa do Mundo 2014<br>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                                    <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg> ${obj.partNumericDate} às ${obj.partHour} <br>
+                                
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                  </svg> ${obj.placeGame}.
+                                </td>
+                              </tr>
+                              `);
+                      }
+                    }                           
+                  </script>
                 </table>
 
               </div>
@@ -255,90 +438,38 @@
           <div class="accordion-body">
             <div class="card text-center">
               <div class="card-header">
-                <h3>Grupo A</h3>
+                <h3>Jogos</h3>
               </div>
               <div class="card-body">
 
                 <table class="table table-striped">
-                  <tr class="align-middle">
-                    <td class="text-start py-5">
-                      <div class="dayofmonth">25</div>
-                      <div>JOGO #34</div> de junho de 2014
-                    </td>
-                    <td class="align-middle">Brasil <a href="#" class="btn btn-primary">3</a> X <a href="#"
-                        class="btn btn-primary">0</a> Gana</td>
-                    <td class="text-start">
-                      Copa do Mundo 2014<br>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-calendar-date" viewBox="0 0 16 16">
-                        <path
-                          d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
-                        <path
-                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                      </svg> 21/01/2023 às 13:00 <br>
+                  <script>
+                    for (let obj of games_of) {
+                     
+                      if (obj.PhaseName.trim() == 'quartas') {
 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                      </svg> Estádio Centenário.
-                    </td>
-                  </tr>
-
-                  <tr class="align-middle">
-                    <td class="text-start py-5">
-                      <div class="dayofmonth">25</div>
-                      <div>JOGO #34</div> de junho de 2014
-                    </td>
-                    <td class="align-middle">Brasil <a href="#" class="btn btn-primary">3</a> X <a href="#"
-                        class="btn btn-primary">0</a> Gana</td>
-                    <td class="text-start">
-                      Copa do Mundo 2014<br>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-calendar-date" viewBox="0 0 16 16">
-                        <path
-                          d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
-                        <path
-                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                      </svg> 21/01/2023 às 13:00 <br>
-
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                      </svg> Estádio Centenário.
-                    </td>
-                  </tr>
-
-                  <tr class="align-middle">
-                    <td class="text-start py-5">
-                      <div class="dayofmonth">25</div>
-                      <div>JOGO #34</div> de junho de 2014
-                    </td>
-                    <td class="align-middle">Brasil <a href="#" class="btn btn-primary">3</a> X <a href="#"
-                        class="btn btn-primary">0</a> Gana</td>
-                    <td class="text-start">
-                      Copa do Mundo 2014<br>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-calendar-date" viewBox="0 0 16 16">
-                        <path
-                          d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
-                        <path
-                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                      </svg> 21/01/2023 às 13:00 <br>
-
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                      </svg> Estádio Centenário.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Data e horas</td>
-                    <td>Jogos</td>
-                    <td>local e data</td>
-                  </tr>
+                        document.write(
+                          `
+                          <tr class="align-middle">
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
+                                   <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
+                                <td class="text-start">
+                                    Copa do Mundo 2014<br>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                                    <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg> ${obj.partNumericDate} às ${obj.partHour} <br>
+                                
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                  </svg> ${obj.placeGame}.
+                                </td>
+                              </tr>
+                              `);
+                      }
+                    }                           
+                  </script>
                 </table>
 
               </div>
@@ -357,90 +488,38 @@
           <div class="accordion-body">
             <div class="card text-center">
               <div class="card-header">
-                <h3>Grupo A</h3>
+                <h3>Jogos</h3>
               </div>
               <div class="card-body">
 
                 <table class="table table-striped">
-                  <tr class="align-middle">
-                    <td class="text-start py-5">
-                      <div class="dayofmonth">25</div>
-                      <div>JOGO #34</div> de junho de 2014
-                    </td>
-                    <td class="align-middle">Brasil <a href="#" class="btn btn-primary">3</a> X <a href="#"
-                        class="btn btn-primary">0</a> Gana</td>
-                    <td class="text-start">
-                      Copa do Mundo 2014<br>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-calendar-date" viewBox="0 0 16 16">
-                        <path
-                          d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
-                        <path
-                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                      </svg> 21/01/2023 às 13:00 <br>
+                  <script>
+                    for (let obj of games_of) {
+                     
+                      if (obj.PhaseName.trim() == 'semi') {
 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                      </svg> Estádio Centenário.
-                    </td>
-                  </tr>
-
-                  <tr class="align-middle">
-                    <td class="text-start py-5">
-                      <div class="dayofmonth">25</div>
-                      <div>JOGO #34</div> de junho de 2014
-                    </td>
-                    <td class="align-middle">Brasil <a href="#" class="btn btn-primary">3</a> X <a href="#"
-                        class="btn btn-primary">0</a> Gana</td>
-                    <td class="text-start">
-                      Copa do Mundo 2014<br>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-calendar-date" viewBox="0 0 16 16">
-                        <path
-                          d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
-                        <path
-                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                      </svg> 21/01/2023 às 13:00 <br>
-
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                      </svg> Estádio Centenário.
-                    </td>
-                  </tr>
-
-                  <tr class="align-middle">
-                    <td class="text-start py-5">
-                      <div class="dayofmonth">25</div>
-                      <div>JOGO #34</div> de junho de 2014
-                    </td>
-                    <td class="align-middle">Brasil <a href="#" class="btn btn-primary">3</a> X <a href="#"
-                        class="btn btn-primary">0</a> Gana</td>
-                    <td class="text-start">
-                      Copa do Mundo 2014<br>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-calendar-date" viewBox="0 0 16 16">
-                        <path
-                          d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
-                        <path
-                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                      </svg> 21/01/2023 às 13:00 <br>
-
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                      </svg> Estádio Centenário.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Data e horas</td>
-                    <td>Jogos</td>
-                    <td>local e data</td>
-                  </tr>
+                        document.write(
+                          `
+                          <tr class="align-middle">
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
+                                   <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
+                                <td class="text-start">
+                                    Copa do Mundo 2014<br>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                                    <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg> ${obj.partNumericDate} às ${obj.partHour} <br>
+                                
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                  </svg> ${obj.placeGame}.
+                                </td>
+                              </tr>
+                              `);
+                      }
+                    }                           
+                  </script>
                 </table>
 
               </div>
@@ -452,97 +531,45 @@
         <h2 class="accordion-header" id="panelsStayOpen-headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#terceiro-lugar" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-            Terceiro lugar
+            Final
           </button>
         </h2>
         <div id="terceiro-lugar" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
           <div class="accordion-body">
             <div class="card text-center">
               <div class="card-header">
-                <h3>Grupo A</h3>
+                <h3>Jogos</h3>
               </div>
               <div class="card-body">
 
                 <table class="table table-striped">
-                  <tr class="align-middle">
-                    <td class="text-start py-5">
-                      <div class="dayofmonth">25</div>
-                      <div>JOGO #34</div> de junho de 2014
-                    </td>
-                    <td class="align-middle">Brasil <a href="#" class="btn btn-primary">3</a> X <a href="#"
-                        class="btn btn-primary">0</a> Gana</td>
-                    <td class="text-start">
-                      Copa do Mundo 2014<br>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-calendar-date" viewBox="0 0 16 16">
-                        <path
-                          d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
-                        <path
-                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                      </svg> 21/01/2023 às 13:00 <br>
+                  <script>
+                    for (let obj of games_of) {
+                     
+                      if (obj.PhaseName.trim() == 'final') {
 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                      </svg> Estádio Centenário.
-                    </td>
-                  </tr>
-
-                  <tr class="align-middle">
-                    <td class="text-start py-5">
-                      <div class="dayofmonth">25</div>
-                      <div>JOGO #34</div> de junho de 2014
-                    </td>
-                    <td class="align-middle">Brasil <a href="#" class="btn btn-primary">3</a> X <a href="#"
-                        class="btn btn-primary">0</a> Gana</td>
-                    <td class="text-start">
-                      Copa do Mundo 2014<br>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-calendar-date" viewBox="0 0 16 16">
-                        <path
-                          d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
-                        <path
-                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                      </svg> 21/01/2023 às 13:00 <br>
-
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                      </svg> Estádio Centenário.
-                    </td>
-                  </tr>
-
-                  <tr class="align-middle">
-                    <td class="text-start py-5">
-                      <div class="dayofmonth">25</div>
-                      <div>JOGO #34</div> de junho de 2014
-                    </td>
-                    <td class="align-middle">Brasil <a href="#" class="btn btn-primary">3</a> X <a href="#"
-                        class="btn btn-primary">0</a> Gana</td>
-                    <td class="text-start">
-                      Copa do Mundo 2014<br>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-calendar-date" viewBox="0 0 16 16">
-                        <path
-                          d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
-                        <path
-                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                      </svg> 21/01/2023 às 13:00 <br>
-
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                      </svg> Estádio Centenário.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Data e horas</td>
-                    <td>Jogos</td>
-                    <td>local e data</td>
-                  </tr>
+                        document.write(
+                          `
+                          <tr class="align-middle">
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
+                                   <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
+                                <td class="text-start">
+                                    Copa do Mundo 2014<br>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                                    <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                  </svg> ${obj.partNumericDate} às ${obj.partHour} <br>
+                                
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                  </svg> ${obj.placeGame}.
+                                </td>
+                              </tr>
+                              `);
+                      }
+                    }                           
+                  </script>
                 </table>
 
               </div>
@@ -554,7 +581,7 @@
         <h2 class="accordion-header" id="panelsStayOpen-headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#final"
             aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-            Final
+            Campeão
           </button>
         </h2>
         <div id="final" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
@@ -566,85 +593,22 @@
               <div class="card-body">
 
                 <table class="table table-striped">
-                  <tr class="align-middle">
-                    <td class="text-start py-5">
-                      <div class="dayofmonth">25</div>
-                      <div>JOGO #34</div> de junho de 2014
-                    </td>
-                    <td class="align-middle">Brasil <a href="#" class="btn btn-primary">3</a> X <a href="#"
-                        class="btn btn-primary">0</a> Gana</td>
-                    <td class="text-start">
-                      Copa do Mundo 2014<br>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-calendar-date" viewBox="0 0 16 16">
-                        <path
-                          d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
-                        <path
-                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                      </svg> 21/01/2023 às 13:00 <br>
+                  <script>
+                    for (let obj of games_of) {
+                     
+                      if (obj.PhaseName.trim() == 'campion') {
 
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                      </svg> Estádio Centenário.
-                    </td>
-                  </tr>
-
-                  <tr class="align-middle">
-                    <td class="text-start py-5">
-                      <div class="dayofmonth">25</div>
-                      <div>JOGO #34</div> de junho de 2014
-                    </td>
-                    <td class="align-middle">Brasil <a href="#" class="btn btn-primary">3</a> X <a href="#"
-                        class="btn btn-primary">0</a> Gana</td>
-                    <td class="text-start">
-                      Copa do Mundo 2014<br>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-calendar-date" viewBox="0 0 16 16">
-                        <path
-                          d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
-                        <path
-                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                      </svg> 21/01/2023 às 13:00 <br>
-
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                      </svg> Estádio Centenário.
-                    </td>
-                  </tr>
-
-                  <tr class="align-middle">
-                    <td class="text-start py-5">
-                      <div class="dayofmonth">25</div>
-                      <div>JOGO #34</div> de junho de 2014
-                    </td>
-                    <td class="align-middle">Brasil <a href="#" class="btn btn-primary">3</a> X <a href="#"
-                        class="btn btn-primary">0</a> Gana</td>
-                    <td class="text-start">
-                      Copa do Mundo 2014<br>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-calendar-date" viewBox="0 0 16 16">
-                        <path
-                          d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z" />
-                        <path
-                          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
-                      </svg> 21/01/2023 às 13:00 <br>
-
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                        <path
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                      </svg> Estádio Centenário.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Data e horas</td>
-                    <td>Jogos</td>
-                    <td>local e data</td>
-                  </tr>
+                        document.write(
+                          `
+                              <tr class="align-middle">
+                                
+                                <td class="align-middle w-50">
+                                    <a href="#" class="btn btn-primary">${obj.TeamA}</a> </td>                              
+                              </tr>
+                              `);
+                      }
+                    }                           
+                  </script>
                 </table>
 
               </div>
