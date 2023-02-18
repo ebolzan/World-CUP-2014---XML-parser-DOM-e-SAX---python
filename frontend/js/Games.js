@@ -26,7 +26,7 @@ class DateTimeGame{
     }
 
     get Arena(){
-        return this.arena.toString();
+        return this.arena.toString().replaceAll(",", " ");
     }
 
     get numericDate(){

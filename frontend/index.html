@@ -43,6 +43,8 @@
           <div class="accordion-body">
             <script src="js/Games.js"></script>
             <script>
+              let COUNTGAMES = 0;
+
               const games_of = [];
               for (let gameOne of games) {
                 //  console.log(gameOne);
@@ -65,10 +67,12 @@
 
                       if (obj.PhaseName.trim() == 'A') {
 
+                        COUNTGAMES+=1;
+
                         document.write(
                           `
                               <tr class="align-middle">
-                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #${COUNTGAMES}</div>${obj.partMonthYear}</td>
                                 <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
                                    <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
                                 <td class="text-start">
@@ -106,11 +110,12 @@
                      
 
                       if (obj.PhaseName.trim() == 'B') {
+                        COUNTGAMES+=1;
 
                         document.write(
                           `
                           <tr class="align-middle">
-                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #${COUNTGAMES}</div>${obj.partMonthYear}</td>
                                 <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
                                    <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
                                 <td class="text-start">
@@ -147,11 +152,12 @@
                     for (let obj of games_of) {
                      
                       if (obj.PhaseName.trim() == 'C') {
+                        COUNTGAMES+=1;
 
                         document.write(
                           `
                           <tr class="align-middle">
-                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #${COUNTGAMES}</div>${obj.partMonthYear}</td>
                                 <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
                                    <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
                                 <td class="text-start">
@@ -187,10 +193,12 @@
                      
                       if (obj.PhaseName.trim() == 'D') {
 
+                        COUNTGAMES+=1;
+
                         document.write(
                           `
                           <tr class="align-middle">
-                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #${COUNTGAMES}</div>${obj.partMonthYear}</td>
                                 <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
                                    <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
                                 <td class="text-start">
@@ -225,11 +233,12 @@
                     for (let obj of games_of) {
                      
                       if (obj.PhaseName.trim() == 'E') {
+                        COUNTGAMES+=1;
 
                         document.write(
                           `
                           <tr class="align-middle">
-                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #${COUNTGAMES}</div>${obj.partMonthYear}</td>
                                 <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
                                    <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
                                 <td class="text-start">
@@ -264,11 +273,12 @@
                     for (let obj of games_of) {
                      
                       if (obj.PhaseName.trim() == 'F') {
+                        COUNTGAMES+=1;
 
                         document.write(
                           `
                           <tr class="align-middle">
-                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #${COUNTGAMES}</div>${obj.partMonthYear}</td>
                                 <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
                                    <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
                                 <td class="text-start">
@@ -304,11 +314,12 @@
                     for (let obj of games_of) {
                      
                       if (obj.PhaseName.trim() == 'G') {
+                        COUNTGAMES+=1;
 
                         document.write(
                           `
                           <tr class="align-middle">
-                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #${COUNTGAMES}</div>${obj.partMonthYear}</td>
                                 <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
                                    <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
                                 <td class="text-start">
@@ -344,11 +355,12 @@
                     for (let obj of games_of) {
                      
                       if (obj.PhaseName.trim() == 'H') {
+                        COUNTGAMES+=1;
 
                         document.write(
                           `
                           <tr class="align-middle">
-                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #${COUNTGAMES}</div>${obj.partMonthYear}</td>
                                 <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
                                    <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
                                 <td class="text-start">
@@ -397,11 +409,12 @@
                     for (let obj of games_of) {
                      
                       if (obj.PhaseName.trim() == 'oitavas') {
+                        COUNTGAMES+=1;
 
                         document.write(
                           `
                           <tr class="align-middle">
-                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #${COUNTGAMES}</div>${obj.partMonthYear}</td>
                                 <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
                                    <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
                                 <td class="text-start">
@@ -447,11 +460,12 @@
                     for (let obj of games_of) {
                      
                       if (obj.PhaseName.trim() == 'quartas') {
+                        COUNTGAMES+=1;
 
                         document.write(
                           `
                           <tr class="align-middle">
-                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #${COUNTGAMES}</div>${obj.partMonthYear}</td>
                                 <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
                                    <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
                                 <td class="text-start">
@@ -497,11 +511,12 @@
                     for (let obj of games_of) {
                      
                       if (obj.PhaseName.trim() == 'semi') {
+                        COUNTGAMES+=1;
 
                         document.write(
                           `
                           <tr class="align-middle">
-                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #${COUNTGAMES}</div>${obj.partMonthYear}</td>
                                 <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
                                    <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
                                 <td class="text-start">
@@ -547,11 +562,12 @@
                     for (let obj of games_of) {
                      
                       if (obj.PhaseName.trim() == 'final') {
+                        COUNTGAMES+=1;
 
                         document.write(
                           `
                           <tr class="align-middle">
-                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #34</div>${obj.partMonthYear}</td>
+                                <td class="text-start py-5"> <div class="dayofmonth">${obj.partDay}</div> <div>JOGO #${COUNTGAMES}</div>${obj.partMonthYear}</td>
                                 <td class="align-middle w-50">${obj.TeamA}  <div class="result"> <a href="#" class="btn btn-primary">${obj.ResultA}</a> X 
                                    <a href="#" class="btn btn-primary">${obj.ResultB}</a> </div> ${obj.TeamB}</td>
                                 <td class="text-start">
@@ -597,6 +613,7 @@
                     for (let obj of games_of) {
                      
                       if (obj.PhaseName.trim() == 'campion') {
+                        COUNTGAMES+=1;
 
                         document.write(
                           `
